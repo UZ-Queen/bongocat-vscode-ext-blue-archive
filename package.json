@@ -4,7 +4,7 @@
   "description": "Code with your beloved students",
   "icon": "media/bongo_icon.png",
   "publisher": "UZ-Queen",
-  "version": "1.0.0-alpha.0",
+  "version": "1.7.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/UZ-Queen/bongocat-vscode-ext-blue-archive"
