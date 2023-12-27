@@ -24,7 +24,7 @@ Currently There're 4 bongo cats.
 
  - Iroha
  - Yuzu
- - Yuzu but ruined her code
+ - Crying Yuzu(Best if you cooked spaghetti and It won't work!)
  - Original Bongo cat
 
 
