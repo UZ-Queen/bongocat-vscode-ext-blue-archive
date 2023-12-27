@@ -14,7 +14,7 @@ Tell me if there's a problem(Not about code itself); I'm totally new to github o
 
 Run the command `Bongo Cat` to create your bongo cat students!
 
-<img src="media/Bongocha_Howto.gif">
+<img src="https://github.com/UZ-Queen/bongocat-vscode-ext-blue-archive/blob/main/media/Bongocha_Howto.gif?raw=true">
 
 ## Features
 
@@ -34,7 +34,7 @@ Currently There're 4 bongo cats.
 
 Close the webview tab if you want to change your bongo cat or ..
 
-<img src="media/Bongocha_Error.gif?raw=true">
+<img src="https://github.com/UZ-Queen/bongocat-vscode-ext-blue-archive/blob/main/media/Bongocha_Error.gif?raw=true">
 
 
 -----------------------------------------------------------------------------------------------------------
