@@ -3,20 +3,30 @@ import * as vscode from 'vscode';
 export function activate({ subscriptions, extensionUri }: vscode.ExtensionContext) {
 
 	subscriptions.push(
-		vscode.commands.registerCommand('bongocat-buddy.bongoCat', () => {
+		vscode.commands.registerCommand('bongocat-mollu.bongoCat', async() => {
+
+			const studentList: Array<string> = ["Iroha", "Yuzu", "Yuzu_Crying", "Original"];
+			let getType = await vscode.window.showQuickPick(studentList,
+				 {placeHolder:"Select a student!",});
+			if(getType === null){
+				getType = "Original";
+				console.error("Unable to load a Student Type... ");	
+			}
+			let studentCatType:string = getType!;
+
 			// make web panel in panel 2 for bongo cat friend
 			const panel = vscode.window.createWebviewPanel(
 				'bongoCat',
-				'Bongo Cat',
+				(studentCatType + ' Bongo Cat'),
 				vscode.ViewColumn.Two,
 				{ enableScripts: true }
 			);
 			// get its frame paths
-			const bongoRightPath = vscode.Uri.joinPath(extensionUri, 'media', 'bongo_right.png');
+			const bongoRightPath = vscode.Uri.joinPath(extensionUri, 'media', studentCatType, 'bongo_right.png');
 			const bongoRightUri = panel.webview.asWebviewUri(bongoRightPath);
-			const bongoLeftPath = vscode.Uri.joinPath(extensionUri, 'media', 'bongo_left.png');
+			const bongoLeftPath = vscode.Uri.joinPath(extensionUri, 'media', studentCatType,'bongo_left.png');
 			const bongoLeftUri = panel.webview.asWebviewUri(bongoLeftPath);
-			const bongoMiddlePath = vscode.Uri.joinPath(extensionUri, 'media', 'bongo_middle.png');
+			const bongoMiddlePath = vscode.Uri.joinPath(extensionUri, 'media',studentCatType, 'bongo_middle.png');
 			const bongoMiddleUri = panel.webview.asWebviewUri(bongoMiddlePath);
 
 			const bongoFrameGenerator = getBongoState();
@@ -87,7 +97,7 @@ enum BongoState {
 	LEFT = 'left',
 	RIGHT = 'right'
 }
-
+  
 function* getBongoState() {
 	let current = BongoState.LEFT;
 	while (true) {

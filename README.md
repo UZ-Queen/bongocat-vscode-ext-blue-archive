@@ -1,31 +1,41 @@
-# Bongo Cat Buddy
+# Blue Archive Bongo Cat
 
-Bongo cat buddy creates a bongo cat to type along with you 🐱
+Blue Archive Bongo Cat creates a bongo cat to type along with you.
 
-## Use
+## Original Extension
 
-Run the command `Bongo Cat` to create your bongo cat buddy!
+This extension is forked from https://github.com/JohnnyRacket/bongocat-vscode-ext 
 
-![Bongo Cat Use GIF](/media/bongo_cat_gif.gif?raw=true)
+Tell me if there's a problem(Not about code itself); I'm totally new to github or something else.
+
+
+
+## How to Use
+
+Run the command `Bongo Cat` to create your bongo cat students!
+
+<img src="media/Bongocha_Howto.gif">
 
 ## Features
 
 Bongo cat in a webview that types alongside you!
 
+Currently There're 4 bongo cats.
+
+ - Iroha
+ - Yuzu
+ - Yuzu but ruined her code
+ - Original Bongo cat
+
+
 > Note: Bongo cat currently does not recognize modifier keys when typing.
 
+## Errors
 
-## Release Notes
+Close the webview tab if you want to change your bongo cat or ..
 
-Users appreciate release notes as you update your extension.
+<img src="media/Bongocha_Error.gif?raw=true">
 
-### 1.0.0
-
-Initial release of Bongo Cat Buddy
-
-### 1.4.0
-
-HD upgrade of bongo cat visuals
 
 -----------------------------------------------------------------------------------------------------------
 
